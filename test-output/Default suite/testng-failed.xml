@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="suite.sanity.s103EnterPDPPage">
+      <class name="suite.sanity.s101SearchHomePage">
         <methods>
-          <include name="s103EnterPDPPageTest"/>
+          <include name="s101SearchHomePageTest"/>
         </methods>
-      </class> <!-- suite.sanity.s103EnterPDPPage -->
+      </class> <!-- suite.sanity.s101SearchHomePage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

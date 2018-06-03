@@ -40,8 +40,10 @@ public class FCI_TestConfig {
 				driver = new FirefoxDriver();
 			else if(properties.getProperty("browser").equalsIgnoreCase("ie"))
 				driver = new InternetExplorerDriver();
-			else if(properties.getProperty("browser").equalsIgnoreCase("chrome"))
+			else if(properties.getProperty("browser").equalsIgnoreCase("chrome")){
+				System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 				driver = new ChromeDriver();
+			}
 			else
 				driver = new FirefoxDriver();
 			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
